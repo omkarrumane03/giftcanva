@@ -1,5 +1,6 @@
 <script setup>
 import SiteHeader from './components/SiteHeader.vue'
+import RequestBar from './components/RequestBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import OccasionsStrip from './components/OccasionsStrip.vue'
 import ValueProps from './components/ValueProps.vue'
@@ -14,6 +15,7 @@ import WhatsAppFab from './components/WhatsAppFab.vue'
 <template>
   <div class="min-h-screen">
     <SiteHeader />
+    <RequestBar />
     <main>
       <HeroSection />
       <OccasionsStrip />

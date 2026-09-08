@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="416" viewBox="0 0 240 416">
+  <defs>
+    <pattern id="cubes" width="240" height="208" patternUnits="userSpaceOnUse">
+      <!-- one isometric cube "column" repeated -->
+      <g>
+        <!-- teal cube -->
+        <polygon points="60,0 120,30 120,90 60,120 0,90 0,30" fill="#12889A" />
+        <polygon points="60,0 120,30 60,60 0,30" fill="#2FA6B4" />
+        <polygon points="0,30 60,60 60,120 0,90" fill="#0B6E7E" />
+        <polygon points="60,60 120,30 120,90 60,120" fill="#0A5865" />
+        <!-- coral cube, offset -->
+        <polygon points="180,52 240,82 240,142 180,172 120,142 120,82" fill="#EE4C41" />
+        <polygon points="180,52 240,82 180,112 120,82" fill="#F8695F" />
+        <polygon points="120,82 180,112 180,172 120,142" fill="#D6362C" />
+        <polygon points="180,112 240,82 240,142 180,172" fill="#B02A22" />
+        <!-- small gold accent cube -->
+        <polygon points="60,120 90,136 90,166 60,182 30,166 30,136" fill="#D9AC38" opacity=".9" />
+        <polygon points="60,120 90,136 60,152 30,136" fill="#E9C86C" opacity=".9" />
+        <polygon points="30,136 60,152 60,182 30,166" fill="#BE8F1E" opacity=".9" />
+        <polygon points="60,152 90,136 90,166 60,182" fill="#9C7418" opacity=".9" />
+      </g>
+    </pattern>
+  </defs>
+  <rect width="240" height="416" fill="url(#cubes)" />
+</svg>

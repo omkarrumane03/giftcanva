@@ -9,7 +9,8 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5.5rem;
+    /* clears the fixed header (68px) + fixed request bar (44px) + a little breathing room */
+    scroll-padding-top: 7.5rem;
   }
 
   body {

@@ -12,12 +12,14 @@ const stats = [
   { value: 'Pan-India', label: 'Delivery & service support' },
 ]
 
+const patternUrl = `${import.meta.env.BASE_URL}hero-pattern.svg`
+
 const heroMessage =
   'Hi GiftCanva, I would like a bulk gifting quotation. Please share options and pricing.'
 </script>
 
 <template>
-  <section id="top" class="relative overflow-hidden pt-[68px]">
+  <section id="top" class="relative overflow-hidden pt-[112px]">
     <!-- decorative wash -->
     <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
       <div class="absolute -left-32 -top-24 h-[420px] w-[420px] rounded-full bg-teal-100/60 blur-3xl" />
@@ -90,17 +92,25 @@ const heroMessage =
           <div class="absolute inset-0 rotate-3 rounded-4xl bg-teal-600/8" />
           <div class="absolute inset-0 -rotate-2 rounded-4xl bg-coral-500/8" />
           <div
-            class="relative flex h-full flex-col items-center justify-center gap-4 rounded-4xl border border-ink/8 bg-white p-8 text-center shadow-lift"
+            class="relative flex h-full flex-col items-center justify-center gap-4 overflow-hidden rounded-4xl border border-ink/8 p-8 text-center shadow-lift"
+            :style="{ backgroundImage: `url('${patternUrl}')`, backgroundSize: '200px auto' }"
           >
-            <span class="grid h-16 w-16 place-items-center rounded-2xl bg-teal-50 text-teal-600">
+            <!-- warm scrim so the "crafted with love" copy stays legible over the pattern -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-teal-900/70 via-ink/35 to-coral-900/70"
+              aria-hidden="true"
+            />
+            <span class="relative grid h-16 w-16 place-items-center rounded-2xl bg-white/15 text-white backdrop-blur-sm">
               <IconBase name="gift" class="h-8 w-8" />
             </span>
-            <p class="font-display text-xl font-semibold">Crafted with love.<br />Perfect for gifting.</p>
-            <p class="max-w-xs text-sm leading-relaxed text-ink-muted">
+            <p class="relative font-display text-xl font-semibold text-white">
+              Crafted with love.<br />Perfect for gifting.
+            </p>
+            <p class="relative max-w-xs text-sm leading-relaxed text-white/85">
               Pressure cookers, cookware, appliances, drinkware and curated combi packs — all in
               one catalogue.
             </p>
-            <a href="#catalogue" class="btn-quiet mt-2">
+            <a href="#catalogue" class="btn-quiet relative mt-2 bg-white text-ink hover:bg-white/90">
               Browse the catalogue
               <IconBase name="chevronDown" class="h-4 w-4" />
             </a>
