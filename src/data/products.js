@@ -74,7 +74,7 @@ export const products = [
   p('Tri-Ply Splendid Cookware', 'Prestige', 'cookware', 'Tri-Ply', 'Tri-ply stainless steel', 'prestige-tri-ply-splendid-cookware-tri-ply-stainless-steel.jpg', true),
   p('Judge Everyday Kadai', 'Judge', 'cookware', 'Judge Everyday', 'Non-stick', 'judge-judge-everyday-fry-pan-non-stick.jpg', true),
   p('Judge Everyday Omni Tawa', 'Judge', 'cookware', 'Judge Everyday', 'Non-stick', 'judge-judge-everyday-omni-tawa-non-stick.jpg', true),
-  p('Judge Everyday Fry Pan (Flat)', 'Judge', 'cookware', 'Judge Everyday', 'Non-stick', 'judge-judge-everyday-fry-pan-flat-non-stick.jpg', false),
+  p('Judge Everyday Fry Pan', 'Judge', 'cookware', 'Judge Everyday', 'Non-stick', 'judge-judge-everyday-fry-pan-flat-non-stick.jpg', true),
   p('Judge Everyday Sauce Pan', 'Judge', 'cookware', 'Judge Everyday', 'Non-stick', 'judge-judge-everyday-sauce-pan-non-stick.jpg', true),
 
   // Gift Combi Packs
