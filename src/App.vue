@@ -30,3 +30,5 @@ import WhatsAppFab from './components/WhatsAppFab.vue'
     <InquiryModal />
   </div>
 </template>
+
+
